@@ -44,14 +44,14 @@ const Navbar = () => {
           />
         )}
         {toggleMenu && (
-          <div className="verseify__navbar_menu_container scale-up-center">
-            <div className="verseify__navbar_menu_container-links">
+          <div className="verseify__navbar-menu_container scale-up-center">
+            <div className="verseify__navbar-menu_container-links">
               <Menu />
-            </div>
-            <div className="verseify__navbar-menu_container-links_sign">
+                          <div className="verseify__navbar-menu_container-links_sign">
                 <p>Sign in</p>
                 <button type="button">Sign up</button>
               </div>
+            </div>
           </div>
         )}
       </div>
