@@ -2,15 +2,30 @@ import {React, useState} from 'react'
 import {RiMenu3Line, RiCloseLine} from 'react-icons/ri'
 import './navbar.css'
 import logo from '../../assets/icons/logo.svg'
-const Menu = () => (
-  <>
-    <p><a href="#home">Home</a></p>
-    <p><a href="#library">Library</a></p>
-    <p><a href="#search">Search</a></p>
-    <p><a href="#recent">Recent</a></p>
-    <p><a href="#about">About</a></p>
-  </>
-);
+import {Search} from '../../containers'
+const Menu = () => {
+  const [showX, setShowX] = useState(false); // State to control rendering of X()
+
+  const handleSearchClick = () => {
+    setShowX(true); // Set showX to true when search button is clicked
+  };
+
+
+
+  return (
+    <>
+      <p><a href="#home">Home</a></p>
+      <p><a href="#library">Library</a></p>
+      <p><a href="#search" onClick={handleSearchClick}>Search</a></p>
+      <p><a href="#recent">Recent</a></p>
+      <p><a href="#about">About</a></p>
+
+      {showX && <Search />} {/* Render X component if showX is true */}
+    </>
+  );
+};
+
+
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
