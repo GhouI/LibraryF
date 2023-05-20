@@ -1,15 +1,14 @@
 import './App.css';
-import { Navbar } from './components';
-import { Home} from './containers'
-function App() {
-  return (
-    <div className="App"> 
-     <div className="gradient__bg">
-      <Navbar />
-           <Home />
-
-     </div>
-    </div>
+import { ErrorPage } from './components';
+import { Home, BookPage} from './containers'
+import { Routes, Route } from 'react-router-dom';
+const App = () =>{
+  return (    
+    <Routes>
+      <Route path="/" element={ <Home />} />
+      <Route path="/book/:id" element={ <BookPage />} />
+      <Route path="*" element={<ErrorPage />} />
+    </Routes>
   );
 }
 

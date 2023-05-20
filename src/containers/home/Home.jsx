@@ -4,6 +4,7 @@ import BottomRight from '../../assets/icons/vectors/Vector-1.svg'
 import TopLeft from '../../assets/icons/vectors/Vector-2.svg'
 import TopRight from '../../assets/icons/vectors/Vector-3.svg'
 import BottomLeft from '../../assets/icons/vectors/Vector.svg'
+import {Navbar} from '../../components'
 function RotatingImages(props) {
     const [imageIndex,
         setImageIndex] = useState(0);
@@ -27,7 +28,10 @@ function RotatingImages(props) {
 const Home = () => {
 
     return (
+        <div className='verseify__home'>
+            <Navbar/>
         <div className="verseify__home section__padding" id="home">
+            
             <div className="verseify__home-content">
                 <h1 className="gradient__text">Access Free Fan Translations</h1>
                 <p>Our website provides you with easy access to a wide selection of
@@ -49,6 +53,7 @@ const Home = () => {
                 <img src={BottomLeft} className="square-bottom-left" alt=""/>
                 <RotatingImages/>
             </div>
+        </div>
         </div>
     )
 }
