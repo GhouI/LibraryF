@@ -19,7 +19,7 @@ ratings DECIMAL(2,1),
 FOREIGN KEY (author_id) REFERENCES Authors(author_id),
 FOREIGN KEY (publisher_id) REFERENCES Publishers(publisher_id)
 );
---Creates the BookTexts table
+--Creates the BookTexts table. This table is used to store the text of the books. Basically Chapter content and what language it is
 CREATE TABLE BookTexts (
 book_id INT,
 language VARCHAR(50),

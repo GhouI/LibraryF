@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useContext} from 'react';
 import axios from 'axios';
 import './search.css';
 import {Link} from 'react-router-dom';
@@ -49,7 +49,9 @@ const Search = () => {
         }
         return {};
     };
-
+const CreatingContextForButtons = (book) =>{
+    let context = React.createContext();
+}
 const CreateButtonForBooks = (books) => {
   const buttonRows = [];
   const buttonsPerRow = 7;
@@ -57,7 +59,7 @@ const CreateButtonForBooks = (books) => {
 
   for (let i = 0; i < totalButtons; i += buttonsPerRow) {
     const rowButtons = books.slice(i, i + buttonsPerRow).map((book) => (
-        <Link to={`/book/${book.book_id}`}>
+    <Link to={{ pathname: `/book/${book.book_id}`, state:{id:"1"}  }}>
       <button
         key={book.book_id}
         className="book-button"
@@ -68,9 +70,8 @@ const CreateButtonForBooks = (books) => {
         }}
       >
         {book.book_title}
-        
       </button>
-        </Link>
+    </Link>
     ));
     buttonRows.push(
       <div key={i} style={{ display: 'grid', placeItems: 'center' }}>
