@@ -4,28 +4,35 @@ import BottomRight from '../../assets/icons/vectors/Vector-1.svg'
 import TopLeft from '../../assets/icons/vectors/Vector-2.svg'
 import TopRight from '../../assets/icons/vectors/Vector-3.svg'
 import BottomLeft from '../../assets/icons/vectors/Vector.svg'
+import {Navbar} from '../../components'
 
 function RotatingImages(props) {
     const [imageIndex,
         setImageIndex] = useState(0);
-        const imageNames = ['book1.png','book2.png','book3.png','book4.png']
+    const imageNames = ['book1.png', 'book2.png', 'book3.png', 'book1.png']
     useEffect(() => {
         const interval = setInterval(() => {
             setImageIndex((imageIndex + 1) % 4);
         }, 2000);
         return () => clearInterval(interval);
-    }
-    );
+    });
     return (
         <div className="verseify__home-content__image_rectangle">
-            <img src={require(`../../assets/home-images/${imageNames[imageIndex]}`)} className = "Book-Images"alt=""/>
+            <img
+                src={require(`../../assets/home-images/book1.png`)}
+                className="Book-Images"
+                alt=""/>
         </div>
     );
-    
+
 }
 const Home = () => {
+
     return (
+        <div className='verseify__home'>
+            <Navbar/>
         <div className="verseify__home section__padding" id="home">
+            
             <div className="verseify__home-content">
                 <h1 className="gradient__text">Access Free Fan Translations</h1>
                 <p>Our website provides you with easy access to a wide selection of
@@ -45,8 +52,9 @@ const Home = () => {
                 <img src={TopLeft} className="square-top-left" alt=""/>
                 <img src={TopRight} className="square-top-right" alt=""/>
                 <img src={BottomLeft} className="square-bottom-left" alt=""/>
-                <RotatingImages />
+                <RotatingImages/>
             </div>
+        </div>
         </div>
     )
 }

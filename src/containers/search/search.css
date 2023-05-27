@@ -1,0 +1,80 @@
+.verseify__search-container {
+    left: 150px;
+    position: relative;
+}
+.verseify__search-container input {
+    width: 75%;
+    height: 50px;
+    border-radius: 1px;
+    border: 1px solid #ccc;
+    font-size: 20px;
+    background-image: url("https://i.imgur.com/6Vu6JMH.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 30px 30px;
+    /* Increase the size of the image */
+    padding-left: 40px;
+    /* Adjust the padding to accommodate the larger image */
+    box-sizing: border-box;
+    /* Ensure padding is included in the width calculation */
+}
+.book-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+}
+.book-button h1 {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 25.11px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+.book-button p{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 25.11px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+.book-button button{
+    width: 100%;
+    height: 50px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 25.11px;
+    line-height: 30px;
+    color: #042C54;
+    margin-top: 10px;
+}
+.book-image {
+    width: 200px;
+    height: 300px;
+}
+
+.book-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.book-info {
+    background-color: #042C54;
+    padding: 10px;
+    text-align: center;
+}
+
+.button-row {
+    display: flex;
+    justify-content: center;
+    margin-left: -650px;
+}

@@ -1,0 +1,101 @@
+.verseify__home-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-right: 5rem;
+}
+
+.verseify__home-content p {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+
+    color: #81AFDD;
+    width: 554px;
+    height: 227px;
+    left: 46px;
+    top: 437px;
+}
+
+.gradient__text {
+    width: 802px;
+    height: 200px;
+    left: 37px;
+    top: 260px;
+
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 96px;
+    line-height: 75px;
+    letter-spacing: -0.04em;
+
+    background: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.verseify__home-content__input {
+    width: 100%;
+    margin: 2rem 0 1rem;
+    display: flex;
+
+}
+
+.verseify__home-content__input button {
+    width: 179px;
+    height: 60px;
+    background: #FF4820;
+    border-radius: 5px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    position: relative;
+    top: 25px;
+}
+
+.square-bottom-right {
+    position: absolute;
+    left: 88.68%;
+    right: 9.38%;
+    top: 65.72%;
+    bottom: 30.37%;
+}
+
+.square-top-left {
+    position: absolute;
+    left: 60.97%;
+    right: 37.01%;
+    top: 21.58%;
+    bottom: 74.61%;
+}
+
+.square-top-right {
+    position: absolute;
+    left: 88.68%;
+    right: 9.38%;
+    top: 21.58%;
+    bottom: 74.71%;
+}
+
+.square-bottom-left {
+    position: absolute;
+    left: 60.97%;
+    right: 37.01%;
+    top: 65.72%;
+    bottom: 30.37%;
+}
+
+.Book-Images {
+    position: absolute;
+    right: 275px;
+    top: 200px;
+}

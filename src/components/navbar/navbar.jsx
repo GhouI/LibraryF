@@ -2,15 +2,22 @@ import {React, useState} from 'react'
 import {RiMenu3Line, RiCloseLine} from 'react-icons/ri'
 import './navbar.css'
 import logo from '../../assets/icons/logo.svg'
-const Menu = () => (
-  <>
-    <p><a href="#home">Home</a></p>
-    <p><a href="#library">Library</a></p>
-    <p><a href="#search">Search</a></p>
-    <p><a href="#recent">Recent</a></p>
-    <p><a href="#about">About</a></p>
-  </>
-);
+import {Link} from 'react-router-dom'
+const Menu = () => {
+  return (
+    <>
+      <Link to={{pathname: '/'}}><p>Home</p> </Link>
+     <Link to={{pathname: '/library'}}> <p>Library</p> </Link>
+     <Link to={{pathname: '/search'}}> <p>Search</p> </Link>
+    <Link to={{pathname: '/recent'}}> <p>Recent</p> </Link>
+      <Link to={{pathname: '/about'}}> <p>About</p> </Link>
+
+
+    </>
+  );
+};
+
+
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -44,14 +51,14 @@ const Navbar = () => {
           />
         )}
         {toggleMenu && (
-          <div className="verseify__navbar_menu_container scale-up-center">
-            <div className="verseify__navbar_menu_container-links">
+          <div className="verseify__navbar-menu_container scale-up-center">
+            <div className="verseify__navbar-menu_container-links">
               <Menu />
-            </div>
-            <div className="verseify__navbar-menu_container-links_sign">
+                          <div className="verseify__navbar-menu_container-links_sign">
                 <p>Sign in</p>
                 <button type="button">Sign up</button>
               </div>
+            </div>
           </div>
         )}
       </div>

@@ -1,0 +1,117 @@
+.bookpage__container__image img {
+    left: 5%;
+    position: absolute;
+}
+
+.bookpage__container__description h1 {
+    padding: 25px;
+    position: absolute;
+    color: white;
+    font-size: 50px;
+    top: 10%;
+    left: 21%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.bookpage__container__description h2 {
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    top: 20%;
+    left: 22%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.bookpage__container__description h4 {
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    top: 25%;
+    left: 22%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.bookpage__container__description h3 {
+    position: absolute;
+    color: yellow;
+    font-size: 20px;
+    top: 30%;
+    left: 22%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.bookpage__container__buttons button {
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    box-shadow: 2px 2px 4px #000000;
+}
+.bookpage__container__buttons .upload_button {
+    box-sizing: border-box;
+
+    position: absolute;
+    left: 632px;
+    /* Adjusted value */
+    top: 5010px;
+
+    border: 1px solid #FFFFFF;
+    background-color: greenyellow;
+    top: 35%;
+    left: 33%;
+    background-color: greenyellow;
+}
+.bookpage__container__buttons .read_button {
+    top: 35%;
+    left: 22%;
+    background-color: #FF4820;
+}
+
+
+.bookpage__container__chapters table {
+    position: absolute;
+    top: 40%;
+    left: 22%;
+    width: 50%;
+    border-collapse: collapse;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    box-shadow: 2px 2px 4px #000000;
+    table-layout: fixed;
+    text-align: left;
+    overflow: hidden;
+}
+.bookpage__container__chapters table thead {
+    box-shadow: 0 5px 10px #808080;
+}
+
+.bookpage__container__chapters table th {
+    padding: 1rem 2rem;
+    letter-spacing: 0.1rem;
+    font-weight: 900;
+}
+.bookpage__container__chapters table button {
+    border-radius: 0.25rem;
+    background-color: black;
+    padding: 0.2rem 1rem;
+    text-align: center;
+    color: white;
+}
+.bookpage__container__chapters td,
+.bookpage__container__chapters th {
+    border: 1px solid white;
+}
