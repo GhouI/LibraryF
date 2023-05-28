@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const url = "http://verseify-api.vercel.app/api/"
+const url = "https://verseify-api.vercel.app/api/"
 export  async function getBookByID(id) {
     try {
         const response = await axios.get(url+"GetBookByID", {
