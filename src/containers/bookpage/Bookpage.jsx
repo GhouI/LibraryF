@@ -12,7 +12,7 @@ const TurnObjectIntoBook = ({ Rooks }) => {
         <tr style={{ height: "50px" }} key={index}>
           <td style={{  }}><Link to={{pathname: `/book/${id}/${book.chapter_id}`}}><button>{book.chapter_title}</button></Link></td>
           <td style={{  }}>{book.chapter_language}</td>
-          <td style={{  }}>{book.Group}</td>
+          <td style={{  }}>{book.chapter_group}</td>
         </tr>
       ))}
     </>
