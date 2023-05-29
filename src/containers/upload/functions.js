@@ -18,13 +18,13 @@ export  async function getBookByID(id) {
 
 
 export async function UploadChapterByBookIdAndChapter(book_id, chapter_content, chapter_title, chapter_language, groupName) {
- const data = {
-  book_id: 3,
-  chapter_title: 'your_chapter_title',
-  chapter_language: 'your_chapter_language',
-  chapter_content: 'your_chapter_content',
-  chapter_group: 'your_chapter_group'
-};
+  const data = {
+    book_id: book_id,
+    chapter_title: chapter_title,
+    chapter_language: chapter_language,
+    chapter_content: chapter_content,
+    chapter_group: groupName
+  };
 axios.post('https://verseify-api.vercel.app/api/UploadChapterByBookId', data).then((response) => {
   console.log(response.data);
 }).catch((error) => {
