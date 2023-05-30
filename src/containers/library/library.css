@@ -1,0 +1,12 @@
+.book-buttons-container {
+  display: flex;
+}
+
+.Abook-button {
+    margin-right: 120px;
+}
+
+.book-image img {
+  max-width: 100%;
+  height: auto;
+}

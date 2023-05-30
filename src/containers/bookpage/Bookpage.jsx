@@ -30,7 +30,6 @@ const Bookpage = (props) => {
             try {
                 const data = await getBookByID(id);
                 setBook(data);
-                console.log(data)
             } catch (error) {
                 console.log(error);
             }

@@ -53,7 +53,6 @@ const Search = () => {
             }
         })
             .then((response) => {
-                console.log(response.data);
                 if (response.data.length > 0) {
                     setBooksData(response.data);
                 } else {

@@ -9,8 +9,7 @@ const Menu = () => {
       <Link to={{pathname: '/'}}><p>Home</p> </Link>
      <Link to={{pathname: '/library'}}> <p>Library</p> </Link>
      <Link to={{pathname: '/search'}}> <p>Search</p> </Link>
-    <Link to={{pathname: '/recent'}}> <p>Recent</p> </Link>
-      <Link to={{pathname: '/about'}}> <p>About</p> </Link>
+
 
 
     </>

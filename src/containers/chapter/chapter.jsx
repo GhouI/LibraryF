@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { ErrorPage, Navbar } from "../../components";
-import { Link, useParams } from "react-router-dom";
+import {  useParams } from "react-router-dom";
 import "./chapter.css";
 import GetBookContentByChapterID from './functions.js'
 // lorem
@@ -146,7 +146,7 @@ const WhiteBoxForReading = ({ book }) => {
 
 
 const Chapter = () => {
-  const { id, chapter } = useParams();
+  const {  chapter } = useParams();
   const [bookContent, setBookContent] = useState(null); // Initialize with null instead of undefined
 
   useEffect(() => {

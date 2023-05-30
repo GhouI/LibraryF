@@ -8,7 +8,6 @@ export  async function getBookByID(id) {
                 search: id
             }
         });
-        console.log("Data, "+response.data)
         return response.data;
     } catch (error) {
         console.log(error);
@@ -25,9 +24,7 @@ export async function UploadChapterByBookIdAndChapter(book_id, chapter_content, 
     chapter_content: chapter_content,
     chapter_group: groupName
   };
-axios.post('https://verseify-api.vercel.app/api/UploadChapterByBookId', data).then((response) => {
-  console.log(response.data);
-}).catch((error) => {
+axios.post('https://verseify-api.vercel.app/api/UploadChapterByBookId', data).then((response) => {}).catch((error) => {
   console.log(error);
 });
 }
